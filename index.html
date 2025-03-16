@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Atishay Choudhary</title>
+    <link rel="stylesheet" href="output.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-gray-800 shadow-lg py-4 z-50">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-3xl font-bold text-blue-400">ATISHAY CHOUDHARY</h1>
+            <nav>
+                <ul class="flex space-x-6 text-lg">
+                    <li><a href="#profile" class="hover:text-blue-400 transition duration-300">Home</a></li>
+                    <li><a href="#education" class="hover:text-blue-400 transition duration-300">Education</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400 transition duration-300">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="profile"
+        class="h-screen flex flex-col justify-center items-center text-center bg-cover bg-center fade-in"
+        style="background-image: url('/Images/background1.jpg');">
+        <div class="bg-black bg-opacity-60 p-8 rounded-lg">
+            <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-blue-400 mx-auto mb-4">
+                <img src="/Images/IMG_20230228_203253 (2).jpg" alt="Profile Picture" class="w-full h-full object-cover">
+            </div>
+            <h2 class="text-4xl font-bold text-blue-400">Cybersecurity Enthusiast</h2>
+            <p class="mt-4 text-gray-300 max-w-lg">I am a cybersecurity enthusiast based in Bhopal, India, with a strong
+                foundation in C, C++, Python, Linux, and web
+                development. Passionate about ethical hacking, network security, and digital forensics, I actively
+                engage in Capture The
+                Flag (CTF) challenges to enhance my problem-solving skills. Currently pursuing my B.Tech in Computer
+                Science at Jagran
+                Lakecity University, I am committed to staying at the forefront of cybersecurity trends and
+                technologies. With a keen
+                interest in real-world security applications, I aim to contribute to building robust and secure
+                digital systems. I am
+                always open to collaboration and new opportunities in the field of cybersecurity and technology.</p>
+            <div class="mt-8">
+                <a href="#contact"
+                    class="mt-6 px-6 py-3 bg-blue-500 rounded-lg text-lg font-semibold hover:bg-blue-600 transition">Get
+                    in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <section class="py-16 px-8 fade-in">
+        <div class="container mx-auto flex justify-center">
+            <!-- Education Section -->
+            <div id="education" class="text-center md:text-left">
+                <h2 class="text-3xl font-bold text-blue-400 mb-4">Education</h2>
+                <ul class="text-gray-300">
+                    <li>10th - 86% (St. Thomas School)</li>
+                    <li>12th - 68% (St. Mary's Convent Sr. Sec. School)</li>
+                    <li>B.Tech CSE - 9.09 CGPA (Jagran Lakecity University)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-gray-800 px-8 fade-in">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-blue-400 mb-6">Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-400">Voice Authentication</h3>
+                    <p class="text-gray-300 mt-2">A system utilizing FFT for audio authentication.</p>
+                </div>
+                <br>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-400">CTF Challenges</h3>
+                    <p class="text-gray-300 mt-2">Solving and designing cybersecurity challenges.</p>
+                </div>
+                <br>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-blue-400">Reaearch Paper</h3>
+                    <p class="text-gray-300 mt-2">Presented a research paper on "A Study on Electrical Vehicle Batteries
+                        and Sustainability" in RICCE-2025 at MANIT.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-8 text-center fade-in">
+        <h2 class="text-3xl font-bold text-blue-400">Contact</h2>
+        <p class="text-gray-300 mt-4">Feel free to reach out for collaborations or inquiries.</p>
+        <div class="mt-6 space-y-4">
+            <p><i class="fas fa-phone text-blue-400"></i> 7440741509</p>
+            <p><a href="mailto:atishay.ac09@gmail.com" class="hover:text-blue-400 transition"><i
+                        class="fas fa-envelope text-blue-400"></i> atishay.ac09@gmail.com</a></p>
+            <p><a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin text-blue-400"></i>
+                    LinkedIn</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-4 bg-gray-800 text-gray-300">
+        &copy; 2025 Atishay Choudhary | All Rights Reserved
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const fadeElements = document.querySelectorAll(".fade-in");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 });
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+
+</html>
